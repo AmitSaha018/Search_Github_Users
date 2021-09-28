@@ -12,7 +12,7 @@ import FusionCharts from "fusioncharts";
 import Column2D from "fusioncharts/fusioncharts.charts";
 
 // Include the theme as fusion
-import FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
+import FusionTheme from "fusioncharts/themes/fusioncharts.theme.candy";
 
 // Adding the chart and theme as dependency to the core fusioncharts
 ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
@@ -35,7 +35,7 @@ const ChartComponent = ({ data }) => {
         xAxisName: "Repos",
         xAxisNameFontSize:"16px",
         yAxisNameFontSize:"16px",
-        "theme": "fusion"
+        // "theme": "candy"
       },
       // Chart Data
       data
