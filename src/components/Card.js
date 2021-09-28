@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { MdBusiness, MdLocationOn, MdLink } from 'react-icons/md';
 const Card = () => {
   const { githubUser } = GlobalGitHubContext();
-  const { avatar_url, html_url, name, company, blog, bio, loction, twitter_username } = githubUser;
+  const { avatar_url, html_url, name, company, blog, bio, location, twitter_username } = githubUser;
   return <Wrapper>
     <header>
       <img src={avatar_url} alt={name} />
@@ -20,7 +20,7 @@ const Card = () => {
         <MdBusiness></MdBusiness>{company}
       </p>
       <p>
-        <MdLocationOn></MdLocationOn>{loction || 'earth'}
+        <MdLocationOn></MdLocationOn>{location || 'earth'}
       </p>
       <a href={`https://${blog}`}>
         <MdLink></MdLink>
